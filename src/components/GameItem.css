@@ -1,0 +1,13 @@
+.game-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.game-item.item img {
+    max-width: 120px;
+}
+
+#game-title {
+    font-size: 20px;
+}

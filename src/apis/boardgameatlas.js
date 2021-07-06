@@ -6,6 +6,7 @@ export default axios.create({
     baseURL: 'https://api.boardgameatlas.com/api',
     params: {
         client_id: ID,
-        limit: 50
+        limit: 50,
+        fuzzy_match: true
     }
 });
