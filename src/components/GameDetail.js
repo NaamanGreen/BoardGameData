@@ -1,4 +1,5 @@
 import React from 'react';
+import './GameDetail.css';
 
 const GameDetail = ({game}) => {
     if(!game) {
