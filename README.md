@@ -16,7 +16,7 @@ The application is live at https://naamangreen.com/boardgamedata/
 
 # Screenshots
 
-![alt text](https://github.com/NaamanGreen/BoardGameData/blob/main/application.png?raw=true)
+![alt text](./application.png?raw=true "Main page screenshot")
 
 
 # Tech/framework/API used
