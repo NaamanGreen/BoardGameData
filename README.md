@@ -18,6 +18,7 @@ The application is live at https://naamangreen.com/boardgamedata/
 
 ![alt text](https://github.com/NaamanGreen/BoardGameData/blob/main/application.png?raw=true)
 
+
 # Tech/framework/API used
 React (details below)
 axios
