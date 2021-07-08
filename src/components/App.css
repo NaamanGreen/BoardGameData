@@ -1,0 +1,6 @@
+@media only screen and (min-width: 760px) {
+
+    .ui.row > article {
+        flex: 2;
+    }
+}

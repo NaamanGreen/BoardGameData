@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import boardgameatlas from '../apis/boardgameatlas';
 import GameList from './GameList';
 import GameDetail from './GameDetail';
+import './App.css';
 
 class App extends React.Component {
 
@@ -31,12 +32,12 @@ class App extends React.Component {
                 <SearchBar onFormSubmit={this.onTermSubmit} />
                 <div className="ui grid">
                     <div className="ui row">
-                        <div className="nine wide column">
+                        <article>
                             <GameDetail game={this.state.selectedGame} />
-                        </div>
-                        <div className="seven wide column">
+                        </article>
+                        <article>
                             <GameList onGameSelect={this.onGameSelect} games={this.state.games} />
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
