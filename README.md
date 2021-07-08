@@ -14,11 +14,6 @@ own game collections as well as that of their friends.  In my experience, gamers
 
 The application is live at https://naamangreen.com/boardgamedata/
 
-# Screenshots
-
-![alt text](application.png?raw=true "Main page screenshot")
-
-
 # Tech/framework/API used
 React (details below)
 axios
