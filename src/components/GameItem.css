@@ -11,3 +11,7 @@
 #game-title {
     font-size: 20px;
 }
+
+.content {
+    display: flex;
+}
