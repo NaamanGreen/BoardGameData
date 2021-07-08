@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# Board Game Data
+
+The application uses the API from Board Game Atlas to search for board games that meet the users search term.  The application then 
+displays the returned list with images and details, as well as an expanded detail section for games the user selects.
+
+# Motivation
+
+An extension of a React course I'm taking, I created this application as a means to use the concepts covered and expand upon them in an area that interests me.  
+As I learn more about React and backend techonologies that pair well with it, I hope to make this a more robust application that allows users to track their
+own game collections as well as that of their friends.  In my experience, gamers in the same group often don't want to purchase a game someone else has.
+(But there are special exceptions.)
+
+# How to use?
+
+The application is live at https://naamangreen.com/boardgamedata/
+
+# Screenshots
+
+![alt text](https://github.com/NaamanGreen/BoardGameData/blob/main/application.png?raw=true)
+
+# Tech/framework/API used
+React (details below)
+axios
+Board Game Atlas API:  https://www.boardgameatlas.com/api/docs
+
+
+# React Data
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
