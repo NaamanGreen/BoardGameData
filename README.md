@@ -5,7 +5,8 @@ displays the returned list with images and details, as well as an expanded detai
 
 # Motivation
 
-An extension of a React course I'm taking, I created this application as a means to use the concepts covered and expand upon them in an area that interests me.  
+An extension of a React course I'm taking, I created this application as a means to use the concepts covered and expand upon them in an area that interests me.\
+\
 As I learn more about React and backend techonologies that pair well with it, I hope to make this a more robust application that allows users to track their
 own game collections as well as that of their friends.  In my experience, gamers in the same group often don't want to purchase a game someone else has.
 (But there are special exceptions.)
@@ -15,8 +16,8 @@ own game collections as well as that of their friends.  In my experience, gamers
 The application is live at https://naamangreen.com/boardgamedata/
 
 # Tech/framework/API used
-React (details below)
-axios
+React (details below)\
+axios\
 Board Game Atlas API:  https://www.boardgameatlas.com/api/docs
 
 
