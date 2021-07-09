@@ -16,9 +16,17 @@ class App extends React.Component {
             }
         });
 
+        const gameList = [];
+        
+        response.data.games.map((game) => {
+            if(game.type==="game" && game.rank < 9999999) {
+                gameList.push(game);
+            } 
+        });
+
         this.setState({
-             games: response.data.games, 
-             selectedGame: response.data.games[0]
+             games: gameList,
+             selectedGame: gameList[0]
         });
     };
 
