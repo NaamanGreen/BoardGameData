@@ -1,9 +1,19 @@
+
 .ui.image {
     max-width: 200px;
     padding: 20px;
 }
 
-a {
-    padding: 5px;
-    margin-bottom: 10px;
+.ui.button {
+    margin: 5px;
+}
+
+.info {
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 760px) {
+    .articles {
+        display: flex;
+    }
 }
