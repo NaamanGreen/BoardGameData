@@ -4,11 +4,13 @@ import boardgameatlas from '../apis/boardgameatlas';
 import GameList from './GameList';
 import GameDetail from './GameDetail';
 import './App.css';
+import { animateScroll as scroll} from 'react-scroll';
 
 class App extends React.Component {
 
     state = { games: [], selectedGame: null };
-
+    
+    //Process search results
     onTermSubmit = async (term) => {
         const response = await boardgameatlas.get('/search',{
             params: {
@@ -30,8 +32,20 @@ class App extends React.Component {
         });
     };
 
+    //Smooth scrolling function
+    scrollToTop = () => {
+        scroll.scrollToTop(
+            {
+                duration: 1000,
+                delay: 10,
+                smooth: 'linear'
+            }
+        );
+    }
+
     onGameSelect = (game) => {
         this.setState({ selectedGame: game })
+        this.scrollToTop();
     };
 
     render() {
