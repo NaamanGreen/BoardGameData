@@ -1,4 +1,5 @@
 import React from 'react';
+import GameInfo from './GameInfo';
 import './GameDetail.css';
 
 const GameDetail = ({game}) => {
@@ -27,12 +28,7 @@ const GameDetail = ({game}) => {
                         <a href={game.official_url} style={ game.official_url != null ? { } : {display: 'none'}}><button className="ui button">Official Site</button></a>
                         <a href={game.rules_url} style={ game.rules_url != null ? { } : {display: 'none'}}><button className="ui button">Rules</button></a>
                     </article>
-                    <article className="info">
-                        <strong>Players:</strong> {game.min_players}-{game.max_players} <br/>
-                        <strong>Play time:</strong> {game.min_playtime}-{game.max_playtime} minutes <br/>
-                        <strong>Publisher:</strong> {checkPublisher()} <br/>
-                        <strong>Year Published:</strong> {game.year_published} <br/>
-                    </article>
+                    <GameInfo game={game} />
                 </div>
                 <h3 className="ui header">{game.name}</h3>
                 <p dangerouslySetInnerHTML={createMarkup()}></p>

@@ -1,6 +1,6 @@
 import React from 'react';
+import GameInfo from './GameInfo';
 import './GameItem.css';
-
 
 
 const GameItem = ({game, onGameSelect}) => {
@@ -21,12 +21,7 @@ const GameItem = ({game, onGameSelect}) => {
                     <div className="header">
                         <p id="game-title">{game.name}</p>
                     </div>
-                    <p>
-                        <strong>Players:</strong> {game.min_players}-{game.max_players} <br/>
-                        <strong>Play time:</strong> {game.min_playtime}-{game.max_playtime} minutes <br/>
-                        <strong>Publisher:</strong> {checkPublisher()} <br/>
-                        <strong>Year Published:</strong> {game.year_published} <br/>
-                    </p>
+                    <GameInfo game={game}/>
                 </div>
             </div>
         </div>
