@@ -4,14 +4,6 @@ import './GameItem.css';
 
 
 const GameItem = ({game, onGameSelect}) => {
-
-    function checkPublisher(){
-        if(typeof game.primary_publisher != 'undefined'){
-            return game.primary_publisher.name;
-        } else {
-            return 'Unknown';
-        }
-    }
   
     return (
         <div onClick={() => onGameSelect(game)} className="game-item item">

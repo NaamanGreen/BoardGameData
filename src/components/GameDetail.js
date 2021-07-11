@@ -11,14 +11,6 @@ const GameDetail = ({game}) => {
         return {__html: `${game.description}`};
     }
 
-    function checkPublisher(){
-        if(typeof game.primary_publisher != 'undefined'){
-            return game.primary_publisher.name;
-        } else {
-            return 'Unknown';
-        }
-    }
-
     return (
         <div>
             <div className="ui segment">
