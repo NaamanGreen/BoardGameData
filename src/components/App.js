@@ -3,8 +3,11 @@ import SearchBar from './SearchBar';
 import boardgameatlas from '../apis/boardgameatlas';
 import GameList from './GameList';
 import GameDetail from './GameDetail';
+import Header from './Header';
+import Route from './Route';
 import './App.css';
 import { animateScroll as scroll} from 'react-scroll';
+import Collection from './Collection';
 
 class App extends React.Component {
 
@@ -51,19 +54,25 @@ class App extends React.Component {
     render() {
         return (
             <div className="ui container">
-                <SearchBar onFormSubmit={this.onTermSubmit} />
-                <div className="ui grid">
-                    <div className="ui row">
-                        <article>
-                            <GameDetail game={this.state.selectedGame} />
-                        </article>
-                        <article>
-                            <GameList onGameSelect={this.onGameSelect} games={this.state.games} />
-                        </article>
+                <Header />
+                <Route path="/">
+                    <SearchBar onFormSubmit={this.onTermSubmit} />
+                    <div className="ui grid">
+                        <div className="ui row">
+                            <article>
+                                <GameDetail game={this.state.selectedGame} />
+                            </article>
+                            <article>
+                                <GameList onGameSelect={this.onGameSelect} games={this.state.games} />
+                            </article>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
+                </Route>
+                <Route path="/collections">
+                    <Collection />
+                </Route>
+                
+            </div>      
         );
     }
 }
